@@ -307,6 +307,16 @@ vendor/lib/libconnctrl.so
 bin/msm_irqbalance
 vendor/bin/perfd
 vendor/lib64/libqti-perfd-client.so
+vendor/etc/public.libraries.txt
+vendor/etc/perf-profile0.conf
+vendor/etc/perf-profile1.conf
+vendor/etc/perf-profile2.conf
+vendor/etc/perf-profile3.conf
+vendor/etc/perf-profile4.conf
+vendor/etc/perf-profile5.conf
+vendor/etc/perf-profile6.conf
+vendor/lib64/libqti-perfd-client.so
+vendor/lib64/libqti_performance.so
 vendor/lib/libqti-perfd-client.so
 
 # Peripheral manager
