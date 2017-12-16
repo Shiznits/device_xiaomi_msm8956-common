@@ -97,6 +97,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/aanc_tuning_mixer.txt:system/etc/aanc_tuning_mixer.txt \
     $(LOCAL_PATH)/audio/aanc_tuning_mixer_wcd9335.txt:system/etc/aanc_tuning_mixer_wcd9335.txt \
     $(LOCAL_PATH)/audio/audio_output_policy.conf:system/vendor/etc/audio_output_policy.conf \
+    $(LOCAL_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml
 
 # XML Audio configuration files
@@ -132,7 +133,7 @@ PRODUCT_PACKAGES += \
     libmm-qcamera \
     camera.device@1.0-impl \
     android.hardware.camera.provider@2.4-impl \
-    SnapdragonCamera
+    GoogleCamera
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
@@ -166,6 +167,10 @@ PRODUCT_PACKAGES += \
 # Doze mode
 PRODUCT_PACKAGES += \
     XiaomiDoze
+
+#XiaomiParts
+PRODUCT_PACKAGES += \
+    XiaomiParts
 
 # Fingerprint
 PRODUCT_PACKAGES += \

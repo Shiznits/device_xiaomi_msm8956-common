@@ -391,5 +391,14 @@
          For example, a device with Home, Back and Menu keys would set this
          config to 19. -->
     <integer name="config_deviceHardwareKeys">19</integer>
+    
+    <!--bool for backlight options-->
+    <bool name="config_deviceHasButtonBacklight">true</bool>
+    <bool name="config_deviceHasVariableButtonBrightness">true</bool>
+
+
+    <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors -->
+    <bool name="config_multiColorBatteryLed">true</bool>
+    <bool name="config_multiColorNotificationLed">true</bool>
 
 </resources>
