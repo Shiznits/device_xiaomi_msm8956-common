@@ -670,8 +670,31 @@ service imsdatadaemon /system/bin/imsdatadaemon
     disabled
     seclabel u:r:ims:s0
 
+<<<<<<< HEAD:rootdir/etc/init.qcom.rc
 on property:sys.ims.QMI_DAEMON_STATUS=1
     start imsdatadaemon
+=======
+service gx_fpd /system/bin/gx_fpd
+     class core
+     user system
+     group system drmrpc
+     writepid /dev/cpuset/system-background/tasks
+
+on property:sys.fp.vendor=switchf
+    stop gx_fpd
+    setprop sys.fp.vendor searchf
+    start fingerprintd
+    setprop fpc.fp.miui.token 0
+    setprop ro.boot.fpsensor fpc
+    setprop ro.hardware.fingerprint searchf
+
+on property:sys.fp.onstart=1
+   start fingerprintd
+   setprop goodix.fp.miui.analyse 1
+   setprop goodix.fp.miui.token 0
+   setprop ro.boot.fpsensor gdx
+   setprop ro.hardware.fingerprint goodix
+>>>>>>> 3b4df0f... mido: sepolicy: drop dac_override capability for gx_fpd:rootdir/init.qcom.rc
 
 service ims_rtp_daemon /system/bin/ims_rtp_daemon
     class main
