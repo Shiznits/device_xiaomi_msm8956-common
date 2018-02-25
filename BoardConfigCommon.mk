@@ -217,6 +217,10 @@ include device/qcom/sepolicy/sepolicy.mk
 include device/qcom/sepolicy/legacy-sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 
+# Shims
+TARGET_LD_SHIM_LIBS += \
+       /system/vendor/lib64/lib-imsvt.so|libshims_ims.so
+
 # Wifi
 WPA_SUPPLICANT_VERSION      := VER_0_8_X
 BOARD_HAS_QCOM_WLAN         := true
