@@ -1,1 +1,2 @@
 r_dir_file(audioserver, sysfs)
+allow audioserver hal_perf_hwservice:hwservice_manager find;
