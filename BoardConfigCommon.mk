@@ -113,7 +113,6 @@ WITH_CUSTOM_CHARGER := false
 BOARD_USES_QCNE := true
 
 # Dexpreopt
-ifeq ($(CARDINAL_RELEASE),true)
 ifeq ($(HOST_OS),linux)
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 WITH_DEXPREOPT := true
