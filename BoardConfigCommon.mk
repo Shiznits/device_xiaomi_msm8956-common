@@ -16,7 +16,7 @@
 #
 
 VENDOR_PATH := device/xiaomi/msm8956-common
-
+ALLOW_MISSING_DEPENDENCIES := true
 TARGET_SPECIFIC_HEADER_PATH := $(VENDOR_PATH)/include
 # Architecture
 TARGET_ARCH := arm64
