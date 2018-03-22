@@ -29,7 +29,7 @@ vendor/lib64/libacdbmapper.so
 vendor/lib64/libacdbrtac.so
 vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
--vendor/lib64/libaudioalsa.so
+vendor/lib64/libaudioalsa.so
 vendor/lib64/libhwdaphal.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
