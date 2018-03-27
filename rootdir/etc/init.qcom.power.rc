@@ -154,7 +154,7 @@ on property:init.svc.recovery=running
 on property:dev.bootcomplete=1
     setprop sys.io.scheduler "bfq"
 
-service perfd /system/vendor/bin/perfd
+service perfd /vendor/bin/perfd
     class main
     user root
     group root readproc

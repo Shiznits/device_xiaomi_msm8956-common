@@ -204,6 +204,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health@1.0-service \
     android.hardware.health@1.0
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.manager@1.0
+
 # HWUI
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hwui.texture_cache_size=96 \
